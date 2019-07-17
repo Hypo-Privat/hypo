@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<title>Hypo-Privat Information Darlehensnehmer</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="reply-to" content="support@hypo-privat.com" />
+
+<meta name="author" content="Gert Dorn">
+<meta name="description"
+	content="Welcome to Hypo-Privat ! Darlehen von Privat an Privat " />
+<meta http-equiv="language" content="deutsch, de">
+<meta name="google-site-verification"
+	content="0LMcx8YXu9FRavuO9wN8A0S-yh_gA8g2kU3FC869ng4" />
+<meta name="keywords"
+	content="Anlegen, Darlehen, Privatkredit, investoren, Immobilie , finanzieren ,Hypothek , zinsen, crowdfunding,  " />
+<meta name="robots" content="index , follow" />
+<meta name="revisit-after" content="7 days">
+<meta name="audience" content="all">
+<meta name="siteinfo" content="http://www.Hypo-Privat.com/robots.txt">
+<meta name="expires" content="0">
+<meta name="copyright" content=" Gert Dorn - Copyright&copy; 2017-2030" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- http://ogp.me/ -->
+<meta property="og:title" content="Hypo Privat Darlehen und Anleger " />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.hypo-privat.com" />
+<meta property="og:site_name"
+	content="Hypo Privat Darlehen und Anleger  Willkommen" />
+
+<meta property="og:locale" content="de_DE" />
+<meta property="og:locale:alternate" content="en_GB" />
+<meta property="og:description"
+	content="Hypo Privat peer to peer Darlehen Kredite Investoren Anleger" />
+<meta property="og:image"
+	content="http://www.hypo-privat.com/images/Hypo.png" />
+
+
+<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="../assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+<!-- Check Browser  http://detectmobilebrowsers.com/
+		<script src="js/detectmobilebrowser.js"></script>-->
+<!-- END Check Browser  -->
+</head>
+<body>
+	<div id="page-wrapper">
+
+		<header id="header" class="header-menue">
+			<!--  block ersetzt in menue.js header-menue -->
+
+		</header>
+
+		<!-- Main -->
+		<section id="main" class="container">
+
+			<header>
+				<h2>Informationen f&uuml;r Darlehensnehmer</h2>
+				<p>
+					Die neue Art W&uuml;nsche zu finanzieren.<br>Sehen sie Licht
+					am Horizont
+				</p>
+			</header>
+			<div class="box">
+				<span class="image featured"><img src="images/lake.jpg"
+					alt="" /></span>
+				<div class="row">
+					<div class="6u 12u(mobilep)">
+
+						<h3>Ihre Situation</h3>
+						<ul>
+							
+							<li>Sie sind zu alt f&uuml;r ein Darlehen ?</li>
+							
+							<li>Ihre Hausbank gew&auml;hrt Ihnen keinen Kredit mehr?</li>
+							<li>Ihre Familie / Freunde k&ouml;nnen Sie auch nicht
+								unterst&uuml;tzen?</li>
+							<li>Ratenzahlungen  werden Ihnen nicht mehr gew&auml;hrt?</li>
+
+						</ul>
+
+					</div>
+
+					<div class="6u 12u(mobilep)">
+
+						<h3>Wir bieten</h3>
+						<ul>
+							<li>Tilgungsrate selber festlegen.</li>
+							<li>flexible Laufzeiten und Monatsraten</li>
+							<li>schnelle &amp; unb&uuml;rokratische Durchf&uuml;hrung.</li>
+							<li>faire &amp; transparente Konditionen.</li>
+							
+						</ul>
+					</div>
+					<p>Wir helfen Ihnen  auch in schwierigen F&auml;llen. Gemeinsam
+						finden wir Ihren optimalen Weg Ihre Situation zu verbessern.</p>
+
+
+					<!--wenn user Eigeloggt ist die daten in das Profil &ouml;bernehmen 
+							wenn nicht Loging formular aufrufen und werte &ouml;bernehmen.-->
+				</div>
+				<hr>
+				<!-- Anfang DIV für die InfoBox -->
+
+				<div id="InfoBox" style="z-index: 1; visibility: hidden;">
+					<div id="BoxInnen">
+						<span id="BoxInhalte"> </span>
+					</div>
+				</div>
+
+
+				<!-- Ende DIV für die InfoBox -->
+
+				<div id="darl" class="box">
+					<h2>Darlehen beantragen</h2>
+
+					<p>
+						Kleinkredite und Verbraucherkredite geben wir an unsere Partner
+						weiter! <br> Antrag per Mail <a
+							href="/checklisten/Checkliste-Finanzierung.pdf"
+							title="Checkliste Finanzierungsangaben" target="_blank">Checkliste
+							Finanzierungsangaben</a>
+					</p>
+					<h4 class="Welcome"></h4>
+					<div class="table-wrapper">
+				
+						<form id="darlehenReqform" name="darlehenReq" method="get"
+							accept-charset="utf-8" onsubmit="checkDarlehen()">
+							<input type="hidden" id="func" value="darlehenReq">
+							<table class="alt" >
+
+								<tbody class="align-right">
+									<tr>
+										<td >Verwendungszweck</td>
+
+										<td colspan="2"><select style="width: 300px;"
+											id="Darl_verwendung" onchange="javascript:handleSelect(this)">
+												<option selected="selected" value="HP">Hypothek</option>
+												<option value="RE">Renovierung</option>
+												<option value="UM">Umschuldung / Abl&ouml;sung</option>
+												<option value="WH">Kauf</option>
+										 		<option value="AU">Ausbildung</option>
+												<option value="UN">Unternehmen</option>
+												<option value="FZ">Auto / Motorrad</option>
+												 
+
+										</select></td>
+
+										<!-- onClick="return popWIN(this, 'AGB')">Wiederrufsbelehrung akzeptiert</a> -->
+
+									</tr>
+									<tr>
+										<td>Brutto Einkommen (Jahr)</td>
+										<td colspan="2"><input type="number" id="Darl_einkommen"
+											value="20000" min="10000" max="1000000" placeholder="200000"
+											onmouseover="InfoBoxAnzeigen(event,'Wie hoch ist Ihr j&auml;;hrliches Brutto Einkommen ?');"
+											onmouseout="InfoBoxAusblenden();" href="javascript:void(0)"></td>
+
+									</tr>
+
+									<tr>
+										<td>Darlehen Betrag</td>
+										<td><select style="width: 100px;" id="Darl_whrg">
+												<option selected="selected" value="CHF">CHF</option>
+												<option value="EUR">EUR</option>
+												<option value="USD">USD</option>
+										</select></td>
+										<td><input type="number" id="Darl_betrag" value="5000"
+											min="5000" max="1000000" placeholder="10000"
+											onmouseover="InfoBoxAnzeigen(event,'In welcher H&ouml;;he m&ouml;;chten Sie einen Kredit ?');"
+											onmouseout="InfoBoxAusblenden();" href="javascript:void(0)"></td>
+									</tr>
+
+									<tr>
+										<td>Rate Tilgung + Zins</td>
+
+										<td colspan="2"><input type="number" id="Darl_rate"
+											value="500" min="500" max="5000" placeholder="500"
+											onmouseover="InfoBoxAnzeigen(event,'In welcher H&ouml;;he m&ouml;;chten Sie monatlich Tilgen ?');"
+											onmouseout="InfoBoxAusblenden();" href="javascript:void(0)"></td>
+									</tr>
+									<tr>
+										<td>Laufzeit Monate</td>
+
+										<td colspan="2"><input type="number" id="Darl_zeit"
+											value="60" min="12" max="120" placeholder="60"
+											onmouseover="InfoBoxAnzeigen(event,'Wie lange soll das Darlehen laufen ?');"
+											onmouseout="InfoBoxAusblenden();" href="javascript:void(0)"></td>
+
+									</tr>
+									<tr>
+										<td>Maximale Zinsbelastung in %?</td>
+
+										<td colspan="2"><input type="number" id="Darl_zins"
+											value="2" min="2" max="10" placeholder="2"
+											onmouseover="InfoBoxAnzeigen(event,'Geben Sie den maximalen Zunsatz an welchen Sie bereit sind zu zahlen. Mindestens 2%  ?');"
+											onmouseout="InfoBoxAusblenden();" href="javascript:void(0)"></td>
+
+									</tr>
+									<tr>
+										<td>Auszahlung Wunschtermin</td>
+
+										<td colspan="2"><input type="date" id="Darl_wunsch"
+											value="" placeholder="2018-01-01"
+											onmouseover="InfoBoxAnzeigen(event,'Wann ben&ouml;;tingen Sie das Darlehen ?');"
+											onmouseout="InfoBoxAusblenden();" href="javascript:void(0)"></td>
+
+									</tr>
+
+
+									<tr class="align-left">
+										<td colspan="3">
+											<h3>Sicherheit Objekt Beschreibung</h3>
+									</tr>
+
+									<tr>
+										<td>Wert des Objekts</td>
+										<td><select style="width: 100px;" id="Obj_whrg">
+												<option selected="selected" value="CHF">CHF</option>
+												<option value="EUR">EUR</option>
+												<option value="USD">USD</option>
+										</select></td>
+										<td><input type="number" id="Obj_wert" value="0"
+											min="10000" max="10000000" placeholder="100000"></td>
+									</tr>
+
+									<tr>
+										<td>Baujahr</td>
+										<td colspan="2"><input type="number" id="Obj_baujahr"
+											value="1900" placeholder="2000" min="1800" max="2100" /></td>
+
+									</tr>
+
+									<tr>
+										<td>Strasse</td>
+										<td colspan="2"><input type="text" id="Obj_strasse"
+											value="" placeholder="Strasse" /></td>
+
+									</tr>
+									<tr>
+										<td>Nummer</td>
+										<td colspan="2"><input type="text" id="Obj_hausnr"
+											value="" placeholder="99" /></td>
+
+									</tr>
+									<tr>
+										<td>Plz</td>
+
+										<td colspan="2"><input type="text" id="Obj_plz" value=""
+											placeholder="PLZ" /></td>
+
+									</tr>
+									<tr>
+										<td>Objektort</td>
+
+										<td colspan="2"><input type="text" id="Obj_ort" value=""
+											placeholder="Objektort" /></td>
+
+									</tr>
+									<tr>
+										<td>Land</td>
+
+										<td colspan="2"><select id="Obj_land">
+												<option selected="selected" value="Switzerland">Switzerland</option>
+												<option value="Austria">Austria</option>
+												<option value="Germany">Germany</option>
+												<option value="Liechtenstein">Liechtenstein</option>
+
+										</select></td>
+
+									</tr>
+									<tr>
+										<td>Objekt Beschreibung</td>
+										<td colspan="2"><textarea id="Obj_text"
+												placeholder="Beschreiben Sie das Objekt" rows="7" cols="50"
+												onkeyup="checkLen()"
+												onmouseover="InfoBoxAnzeigen(event,'Beschreiben Sie das Objekt ausf&uuml;;hrlich f&uuml;;r die Anleger ?');"
+												onmouseout="InfoBoxAusblenden();" href="javascript:void(0)"></textarea></td>
+									</tr>
+									<tr align="center">
+
+										<td colspan="3"><input class="button special small"
+											type="submit" value="Beantragen"></td>
+
+									</tr>
+									<tr align="center">
+
+										<td colspan="3"><font color="red">Bitte gehen Sie
+												nach dem Absenden ihres Projektes in Ihr Profil zu
+												Sicherheiten Objekte und laden alle geforderten Unterlagen
+												auf unser System. Erst nach Pr&uuml;;fung der Unterlagen
+												wird das Projekt f&uuml;r das Funding aufgeschaltet.
+												Vielen Dank ! </font></td>
+									<tr>
+								</tbody>
+							</table>
+						</form>
+
+					</div>
+
+
+					<section class="align-justify">
+						<h3>Die Darlehensnehmer m&uuml;ssen unter anderem die
+							folgenden Kriterien erf&uuml;llen:</h3>
+						<ul>
+							<li>Der Darlehensnehmer ist mindestens 18 Jahre und bei
+								planm&auml;ßiger F&auml;lligkeit des Darlehens h&ouml;chstens 75
+								Jahre alt.</li>
+							<li>Der Darlehensnehmer ist Staatsb&ouml;rger des Landes, in
+								dem er den Darlehen beantragt hat, und hat dort seinen Wohnsitz
+								.</li>
+							<li>Die monatliche Belastung aus der Darlehenrate
+								&ouml;bersteigt nicht 50% des frei verf&uuml;gbaren Einkommens
+								im Sinne der Darlehenvergaberichtlinien.</li>
+							<li>Die eingeholten Darlehenausk&ouml;nfte enthalten keine
+								als negativ zu bewertenden Eintragungen im Sinne der
+								Darlehenvergaberichtlinien.</li>
+						</ul>
+
+
+
+						<h3>Zins- und R&uuml;ckzahlungen</h3>
+						<p>Mit den Darlehensnehmern werden monatlich gleichbleibende
+							Darlehenraten (bestehend aus Zinsen und Tilgung) vereinbart.</p>
+
+						<h3>Maßnahmen Zahlungsausfall von Darlehenraten</h3>
+						<p>Bei (teilweiser) Nichtzahlung von Darlehenraten wird die
+							Anlegern (gem&auml;ß den hierf&uuml;r vereinbarten
+							Grunds&auml;tzen &ouml;ber den Forderungseinzug AGB) &uuml;ber
+							Stundungen bzw. Vollstreckungsmaßnahmen entscheiden.</p>
+
+						<h3>K&ouml;ndigung der Anlagen</h3>
+						<p>Ein Recht zur vorzeitigen K&uuml;ndigung der
+							Darlehensvertr&auml;ge durch die Anleger ist nicht vorgesehen.
+							Eine Ver&auml;ußerung an Dritte ist grunds&auml;tzlich
+							m&ouml;glich.</p>
+
+						<!--  
+
+						<h3>Risikoklassifizierung.</h3>
+						<p>Die Darlehene werden einer von acht Risikoklassen
+							zugeordnet. Der Risikoklasse gibt Auskunft &ouml;ber die statistische
+							Wahrscheinlichkeit eines Ausfalls des jeweiligen Darlehens. Je
+							besser die Risikoklasse (z.B. A), desto geringer die
+							prognostizierte statistische Ausfallwahrscheinlichkeit. Umgekehrt
+							bieten Darlehene h&ouml;herer Risikoklassen eine h&ouml;here Verzinsung.
+							Die Risikoklassen reichen von der niedrigsten Risikoklasse A (mit
+							einer prognostizierten durchschnittlichen Ausfallrate von 0% bis
+							0.99%) bis Risikoklasse G (mit einer prognostizierten
+							durchschnittlichen Ausfallrate von 12.00% bis 13.99%) sowie
+							schließlich der h&ouml;chsten Risikoklasse HR (mit einer
+							prognostizierten durchschnittlichen Ausfallrate von 14% und
+							h&ouml;her). Die Zuordnung zu den Risikoklassen erfolgt durch die
+							CrossLend GmbH (die Muttergesellschaft der Anlegern) auf
+							Grundlage eines von ihr entwickelten Scoring-Verfahrens anhand
+							von statistischen Methoden. F&ouml;r das Scoring bedient sich die
+							CrossLend GmbH unter anderem der Darlehenscorings und anderer
+							Daten verschiedener Darlehenb&ouml;ros.</p>
+
+-->
+
+
+						<h3>Kosten/Vertriebsverg&uuml;tung</h3>
+						<p>
+							F&ouml;r die Zeichnung der Darlehensvertr&auml;ge f&auml;llt ein
+							Ausgabeaufschlag in H&ouml;he von 2% des Zeichnungsbetrages
+							zus&auml;tzlich der jeweils g&uuml;ltigen Mehrwertsteuer an, der
+							von den Darlehensnehmer und Anleger jeweils zu h&auml;lfte zu
+							tragen ist. F&ouml;r die Verwahrung der Schuldverschreibung bei
+							der Hypo-Privat fallen f&uuml;r die Anleger keine Kosten an.
+							Einzelfall bedingt k&ouml;nnen f&uuml;r Darlehensnehmer
+							individuell Kosten entstehen, z.B. f&uuml;r die Verwahrung der
+							Darlehensvertr&auml;ge bei anderen Depotbanken oder bei der
+							Ver&auml;ußerung der Darlehensvertr&auml;ge.<br>Alle
+							weiteren Kosten welche zur Umsetzung der Darlehensvertrages
+							anfallen (Notar, Grundbucheintrag, etc.) gehen zu Lasten des
+							Darlehennehmers.
+						</p>						
+					</section>
+				</div>
+			</div>
+			<!-- Footer -->
+			<footer id="footer" class="soziale-menue">
+				<!--  in menue.js ausgelagert -->
+			</footer>
+		</section>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery-3.1.0.js"></script>
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/jquery.scrollgress.min.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/menue.js"></script>
+
+	<script>
+		function handleSelect(elm) {
+			// alert(elm.value)
+			// window.location = "contact.html;
+		}
+	</script>
+	<script src="../assets/js/darlehen.js"></script>
+</body>
+</html>

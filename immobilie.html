@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<title>Information Darlehensnehmer</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="reply-to" content="support@hypo-privat.com" />
+
+<meta name="author" content="Gert Dorn">
+<meta name="description"
+	content="Welcome to Hypo-Privat ! Darlehen von Privat an Privat " />
+	<meta http-equiv="language" content="deutsch, de">
+	<meta name="google-site-verification" content="0LMcx8YXu9FRavuO9wN8A0S-yh_gA8g2kU3FC869ng4" />
+<meta name="keywords"
+	content="Anlegen, Darlehen, Privatkredit, investoren, Immobilie , finanzieren ,Hypothek , zinsen, crowdfounding,  " />
+<meta name="robots" content="index , follow" />
+<meta name="revisit-after" content="7 days">
+<meta name="audience" content="all">
+<meta name="siteinfo" content="http://www.Hypo-Privat.com/robots.txt">
+<meta name="expires" content="0">
+<meta name="copyright" content=" Gert Dorn - Copyright&copy; 2017-2030" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- http://ogp.me/ -->
+<meta property="og:title" content="Hypo Privat Darlehen und Anleger "/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.hypo-privat.com"/>
+<meta property="og:site_name" content="Hypo Privat Darlehen und Anleger  Willkommen"/>
+
+<meta property="og:locale" content="de_DE"/>
+<meta property="og:locale:alternate" content="en_GB" />
+<meta property="og:description" content="Hypo Privat peer to peer Darlehen Kredite Investoren Anleger"/>
+<meta property="og:image" content="http://www.hypo-privat.com/images/Hypo.png" />
+
+
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+
+		<!-- Check Browser  http://detectmobilebrowsers.com/
+		<script src="js/detectmobilebrowser.js"></script>-->
+		<!-- END Check Browser  -->
+</head>
+<body>
+	<div id="page-wrapper">
+
+		<header id="header" class="header-menue">
+			<!--  block ersetzt in menue.js header-menue -->
+
+		</header>
+
+		<!-- Main -->
+		<section id="main" class="container">
+
+			<header>
+				<h2>Immobilien Daten erfassen</h2>
+				<p>
+					Sicherheit f&uumlr beantragtes Darlehen eintragen. Bitte gehen Sie
+					anschliessend zu <a href="UserProfil.html">Mein Profil</a> . W&aumlhlen
+					Sie "Sicherheiten" und laden sie alle angeforderten Dokument und
+					Bilder zu der Immobilie.
+				</p>
+			</header>
+			<div class="box">
+
+				<h4 class="Welcome"></h4>
+				<div class="table-wrapper">
+					<form id="objektInfo" name="objekt" method="get"
+						accept-charset="utf-8" onsubmit="checkObjekt()">
+						<input type="hidden" id="func" value="objektInfo">
+						<table class="alt">
+
+							<tbody class="align-right">
+
+								<tr class="align-left">
+									<td colspan="3">
+										<h3>Sicherheit Objekt Beschreibung</h3>
+								</tr>
+
+								<tr>
+									<td>Wert des Objekts</td>
+									<td><select style="width: 100px;" id="Obj_whrg">
+											<option selected="selected" value="CHF">CHF</option>
+											<option value="EUR">EUR</option>
+											<option value="USD">USD</option>
+									</select></td>
+									<td><input type="number" id="Obj_wert" value="0"
+										min="10000" max="10000000" placeholder="100000"></td>
+								</tr>
+
+								<tr>
+									<td>Baujahr</td>
+									<td colspan="2"><input type="number" id="Obj_baujahr"
+										value="1900" placeholder="2000" min="1800" max="2100" /></td>
+
+								</tr>
+
+								<tr>
+									<td>Strasse</td>
+									<td colspan="2"><input type="text" id="Obj_strasse"
+										value="" placeholder="Strasse" /></td>
+
+								</tr>
+								<tr>
+									<td>Nummer</td>
+									<td colspan="2"><input type="text" id="Obj_hausnr"
+										value="" placeholder="99" /></td>
+
+								</tr>
+								<tr>
+									<td>Plz</td>
+
+									<td colspan="2"><input type="text" id="Obj_plz" value=""
+										placeholder="PLZ" /></td>
+
+								</tr>
+								<tr>
+									<td>Objektort</td>
+
+									<td colspan="2"><input type="text" id="Obj_ort" value=""
+										placeholder="Objektort" /></td>
+
+								</tr>
+								<tr>
+									<td>Land</td>
+
+									<td colspan="2"><select id="Obj_land">
+											<option selected="selected" value="Switzerland">Switzerland</option>
+											<option value="Austria">Austria</option>
+											<option value="Germany">Germany</option>
+											<option value="Liechtenstein">Liechtenstein</option>
+
+									</select></td>
+
+								</tr>
+								<tr>
+
+									<td colspan="3" class="align-center"><input
+										class="button special small" type="submit" value="Absenden"></td>
+
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+
+			</div>
+			<!-- Footer -->
+			<footer id="footer" class="soziale-menue">
+				<!--  in menue.js ausgelagert -->
+			</footer>
+		</section>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery-3.1.0.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollgress.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/menue.js"></script>
+
+	<script src="assets/js/objekt.js"></script>
+</body>
+</html>

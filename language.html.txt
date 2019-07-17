@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Mikrodaten-Markup hinzugefügt von Google Strukturierte Daten: Markup-Hilfe -->
+<html>
+<html><head><title>Userinformation</title>
+
+
+
+
+<script type="text/javascript">
+
+function pruefen()
+{
+
+ var browser_name;
+ var browser_ver;
+ var browser_language;
+ var platform;
+ var java_enabled;
+ var cookie_enabled;
+
+ browser_name=navigator.appName;
+ browser_ver=navigator.appVersion;
+ browser_language=navigator.language;
+ platform=navigator.platform; 
+ java_enabled=navigator.javaEnabled();
+ cookie_enabled=navigator.cookieEnabled;
+
+ document.write("Browsername: " + browser_name + "<br> <br>");
+ document.write("Browserversion: " + browser_ver + "<br> <br>");
+ document.write("Browsersprache: " + browser_language + "<br> <br>");
+ document.write("Platform: " + platform + "<br> <br>");
+ document.write("Cookies erlaubt: " + cookie_enabled + "<br> <br>");
+ document.write("JavaApplets erlaubt: " + java_enabled);
+
+}
+
+</script>
+
+<script language="JavaScript1.2">
+
+if (navigator.appName == 'Netscape')
+var language = navigator.language;
+else
+var language = navigator.browserLanguage;
+
+if (language.indexOf('de') > -1) document.write ('deutscher browser');
+else if (language.indexOf('en') > -1) document.write ('englischer Browser');
+else if (language.indexOf('it') > -1) document.write ('italienischer Browser');
+else
+document.write ('Browser weder deutsch, noch englisch, noch italienisch');
+
+</script>
+
+</head><body OnLoad="pruefen()">
+
+</body></html>
+</html>

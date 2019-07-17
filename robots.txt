@@ -1,0 +1,8 @@
+    hypo-privat.com // for users from Germany, Swiss, etc...en.hypo-privat.com // for users from US, UK, etc..
+    de.hypo-privat.com // for users from Germany, Swiss, etc...
+    fr.hypo-privat.com // for users from France, Swiss, etc...
+    
+    Sitemap: http://hypo-privat.com/sitemap.xml
+    Sitemap: http://de.hypo-privat.com/sitemap.xml
+    Sitemap: http://en.hypo-privat.com/sitemap.xml
+    Sitemap: http://fr.hypo-privat.com/sitemap.xml
