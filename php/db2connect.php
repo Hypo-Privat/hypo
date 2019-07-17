@@ -11,7 +11,7 @@ error_reporting(E_ALL);
 $database = "SAMPLE";        # Get these database details from
 $hostname = "172.17.0.4";  # the web console 192.168.1.123  172.17.0.4
 $user     = "db2inst1";   	#
-$password = "db2admin";   	#
+$password = "xxx";   	#
 $port     = 50000;          #
 $ssl_port = 50001;          #
 
